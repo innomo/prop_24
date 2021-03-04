@@ -13,7 +13,7 @@ const Gallary = () => {
               fill='currentColor'
             >
               <path
-                fill-rule='evenodd'
+                fillRule='evenodd'
                 d='M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z'
                 clip-rule='evenodd'
               />
@@ -83,7 +83,7 @@ const Gallary = () => {
               fill='currentColor'
             >
               <path
-                fill-rule='evenodd'
+                fillRule='evenodd'
                 d='M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z'
                 clip-rule='evenodd'
               />

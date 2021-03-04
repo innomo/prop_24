@@ -13,7 +13,7 @@ const App = () => {
         <Header />
         <Route path='/login' component={LoginPage} />
         <Route path='/signup' component={SignupPage} />
-        <Route path='/details' component={DetailsPage} />
+        <Route path='/details/:id' component={DetailsPage} />
         <Route path='/' component={HomePage} exact />
 
         <Footer />
