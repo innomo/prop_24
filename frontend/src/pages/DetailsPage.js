@@ -7,6 +7,7 @@ import Description from '../components/Description';
 import doubleBed from '../img/double-bed.svg';
 import bathtub from '../img/bathtub.svg';
 import car from '../img/car.svg';
+import area from '../img/focus.svg';
 
 const DetailsPage = ({ match }) => {
   const [house, setHouse] = useState({});
@@ -170,6 +171,16 @@ const DetailsPage = ({ match }) => {
                       <img src={car} alt='shower' srcSet='' />
                       <span className='font-semibold text-gray-600'>
                         {house.parking}
+                      </span>
+                    </div>
+                  ) : null}
+                </div>
+                <div className='flex'>
+                  {house.size != 0 ? (
+                    <div className='text-gray-600  flex items-center space-x-1'>
+                      <img src={area} alt='shower' srcSet='' />
+                      <span className='font-semibold text-gray-600'>
+                        {`${house.size} m²`}
                       </span>
                     </div>
                   ) : null}
