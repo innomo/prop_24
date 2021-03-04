@@ -3,6 +3,8 @@ import colors from 'colors';
 import dotenv from 'dotenv';
 import connectDB from './config/db.js';
 import houses from './data/houses.js';
+import houseRoutes from './routes/houseRoutes.js';
+import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 dotenv.config();
 
@@ -14,17 +16,13 @@ app.get('/', (req, res) => {
   res.send('API is running...');
 });
 
-app.get('/api/houses', (req, res) => {
-  res.json(houses);
-});
+app.use('/api/houses', houseRoutes);
 
-app.get('/api/houses/:id', (req, res) => {
-  const house = houses.find((p) => p._id == req.params.id);
-  res.json(house);
-});
+app.use(notFound);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
-const MODE = process.env.NODE_ENV || 5000;
+const MODE = process.env.NODE_ENV;
 
 app.listen(
   PORT,

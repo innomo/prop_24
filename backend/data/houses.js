@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: 1,
     image: 'https://images.prop24.com/202665324/Crop318x212',
     description:
       'Presenting the best accomodation in town, surrounded by shops, gym, church and sports ground. Lorem ipsum dolor sit amet. Lorem, ipsum dolor.',
@@ -14,7 +13,6 @@ const products = [
     parking: 2,
   },
   {
-    _id: 2,
     image: 'https://images.prop24.com/202665324/Crop318x212',
     description:
       'Presenting the best accomodation in town, surrounded by shops, gym, church and sports ground. Lorem ipsum dolor sit amet. Lorem, ipsum dolor.',
@@ -28,7 +26,6 @@ const products = [
     parking: 0,
   },
   {
-    _id: 3,
     image: 'https://images.prop24.com/202665324/Crop318x212',
     description:
       'Presenting the best accomodation in town, surrounded by shops, gym, church and sports ground. Lorem ipsum dolor sit amet. Lorem, ipsum dolor.',
@@ -42,7 +39,6 @@ const products = [
     parking: 2,
   },
   {
-    _id: 4,
     image: 'https://images.prop24.com/202665324/Crop318x212',
     description:
       'Presenting the best accomodation in town, surrounded by shops, gym, church and sports ground. Lorem ipsum dolor sit amet. Lorem, ipsum dolor.',
@@ -56,7 +52,6 @@ const products = [
     parking: 1,
   },
   {
-    _id: 5,
     image: 'https://images.prop24.com/202665324/Crop318x212',
     description:
       'Presenting the best accomodation in town, surrounded by shops, gym, church and sports ground. Lorem ipsum dolor sit amet. Lorem, ipsum dolor.',
@@ -71,7 +66,6 @@ const products = [
     parking: 1,
   },
   {
-    _id: 6,
     image: 'https://images.prop24.com/202665324/Crop318x212',
     description:
       'Presenting the best accomodation in town, surrounded by shops, gym, church and sports ground. Lorem ipsum dolor sit amet. Lorem, ipsum dolor.',
