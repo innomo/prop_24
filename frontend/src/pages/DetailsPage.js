@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { listHouseDetails } from '../actions/houseActions';
 import Gallary from '../components/Gallary';
 import ContactAgent from '../components/ContactAgent';
 import Description from '../components/Description';
@@ -10,15 +12,15 @@ import car from '../img/car.svg';
 import area from '../img/focus.svg';
 
 const DetailsPage = ({ match }) => {
-  const [house, setHouse] = useState({});
+  const dispatch = useDispatch();
+
+  const houseDetails = useSelector((state) => state.houseDetails);
+  const { loading, error, house } = houseDetails;
 
   useEffect(() => {
-    const fetchHouse = async () => {
-      const { data } = await axios.get(`/api/houses/${match.params.id}`);
-      setHouse(data);
-    };
-    fetchHouse();
-  }, []);
+    dispatch(listHouseDetails(match.params.id));
+    console.log('-------' + house);
+  }, [dispatch, match]);
 
   return (
     <div>
